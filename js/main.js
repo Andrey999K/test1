@@ -20,13 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (event.target.tagName == "INPUT") {
-      let input = event.target;
-      input.addEventListener("keydown", () => {
-        console.log(event);
-        if (event.code == "Enter") {
-          console.log("GGGGGGG");
-        }
-      });
+      console.log(event);
+      if (event.code == "Enter") {
+        let title = document.createElement("h2");
+        title.className = "title";
+        title.textContent = event.target.value;
+        container.insertAdjacentElement("beforeend", title);
+        container.removeChild(event.target);
+      }
     }
   });
 });
