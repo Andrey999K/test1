@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.input {
+    border: none;
+    outline: none;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+}
