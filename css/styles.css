@@ -1,4 +1,6 @@
-body {
+body,
+div,
+button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,9 +14,22 @@ body {
     margin: 0 auto;
 }
 
+.button {
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #dadada;
+}
+
 .input {
     border: none;
     outline: none;
+    margin-bottom: 20px;
 }
 
 .title {
